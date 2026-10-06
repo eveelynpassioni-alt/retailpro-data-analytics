@@ -1,13 +1,3 @@
-# RetailPro - Data Analytics
-
-Proyecto desarrollado durante el curso de Data Analytics de Coderhouse.
-
-## Objetivo del proyecto
-
-RetailPro es una empresa distribuidora de tecnología. El objetivo del proyecto es organizar sus datos comerciales en una base de datos relacional y utilizar SQL para obtener información que ayude a analizar las ventas, los productos y los clientes.
-
-A lo largo de los distintos módulos se va construyendo el proyecto de forma progresiva, desde la creación de la base de datos hasta las consultas de negocio.
-
 ## Estructura del repositorio
 
 ### Módulo 3 - Creación de la base de datos
@@ -45,6 +35,23 @@ Se trabajó sobre:
 
 Al final del archivo también se incluyen algunos hallazgos obtenidos a partir de los resultados.
 
+### Módulo 5 - Consultas con JOIN y UNION ALL
+
+Carpeta: `modulo_5`
+
+Archivo: `m5_consultas_joins.sql`
+
+En este módulo se trabajó con relaciones entre tablas para obtener información más completa a partir de la base de datos.
+
+Se utilizaron consultas con:
+
+- `INNER JOIN` para combinar ventas con clientes, productos y categorías;
+- `LEFT JOIN` para identificar clientes sin ventas;
+- `LEFT JOIN` para identificar productos sin ventas;
+- `UNION ALL` para consolidar resultados de dos grupos de ventas.
+
+Estas consultas permiten ampliar el análisis incorporando información descriptiva y combinando datos provenientes de distintas tablas.
+
 ## Cómo ejecutar los archivos
 
 Los scripts fueron trabajados en Microsoft SQL Server Management Studio (SSMS).
@@ -55,6 +62,7 @@ Para ejecutarlos:
 2. Conectarse al servidor.
 3. Ejecutar primero `ventas_tech_db.sql` para crear la base de datos y cargar la información.
 4. Una vez creada `Ventas_Tech_DB`, ejecutar `m4_consultas_negocio.sql` para obtener las métricas y consultas de negocio.
+5. Ejecutar `m5_consultas_joins.sql` para obtener las consultas con JOIN y UNION ALL.
 
 ## Herramientas utilizadas
 
